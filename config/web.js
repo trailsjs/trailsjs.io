@@ -16,28 +16,11 @@ module.exports = {
    */
   port: process.env.PORT || 3000,
 
-  plugins: [
-    {
-      register: require('vision'),
-      options: { }
-    },
-    {
-      register: require('inert'),
-      options: { }
-    }
-  ],
-
   views: {
     engines: {
-      jsx: require('hapi-react-views')
+      html: require('handlebars')
     },
-    relativeTo: __dirname,
-    path: 'views',
-    compileOptions: {
-      renderMethod: 'renderToString',
-      layoutPath: path.join(__dirname, 'views'),
-      layout: 'html'
-    }
+    path: 'views'
   }
 
 }

@@ -16,7 +16,7 @@
     "trailsjs"
   ],
   "dependencies": {
-    "hapi-react-views": "^8.0.0",
+    "handlebars": "^4.0.5",
     "inert": "^4.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
