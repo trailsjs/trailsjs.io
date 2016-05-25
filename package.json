@@ -5,7 +5,7 @@
   "homepage": "http://trailsjs.io/",
   "author": {
     "name": "langateam",
-    "email": "wbprice@langa.io",
+    "email": "hello@langa.io",
     "url": "http://langa.io"
   },
   "main": "index.js",
@@ -50,8 +50,9 @@
     "winston": "^2.2"
   },
   "devDependencies": {
-    "eslint": "^2.8",
-    "eslint-config-trails": "latest",
+    "eslint": "^2.10.2",
+    "eslint-config-trails": "^1.0.7",
+    "eslint-plugin-react": "^5.1.1",
     "mocha": "^2.4",
     "supertest": "^1.2"
   },

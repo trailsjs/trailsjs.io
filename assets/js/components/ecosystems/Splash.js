@@ -11,7 +11,7 @@ class Splash extends Component {
     return (
       <section className="trails-splash">
         <div className="container">
-          <img className="trails-logo" src={logo} alt="trails-logo" />
+        <img className="trails-logo" src={logo} alt="trails-logo" />
           <h2 className="trails-splash-description">A Modular Web Application Framework for Node.js</h2>
           <div className="trails-splash-button-tray">
             <Button label="View Docs" />
