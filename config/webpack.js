@@ -1,3 +1,4 @@
+
 // config/webpack.js
 const path = require('path')
 
@@ -23,8 +24,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        test: /\.(css|scss)$/,
+        loaders: ['style', 'css', 'sass']
       },
       {
         test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,

@@ -21,7 +21,8 @@ module.exports = {
     require('trailpack-router'),
     require('trailpack-hapi'),
     require('trailpack-waterline'),
-    require('trailpack-footprints')
+    require('trailpack-footprints'),
+    require('trailpack-webpack')
   ],
 
   /**
@@ -29,6 +30,7 @@ module.exports = {
    */
   paths: {
     root: path.resolve(__dirname, '..'),
-    temp: path.resolve(__dirname, '..', '.tmp')
+    temp: path.resolve(__dirname, '..', '.tmp'),
+    www: path.resolve(__dirname, '..', 'dist')
   }
 }

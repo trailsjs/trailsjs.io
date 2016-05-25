@@ -1,0 +1,46 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.trails-header {
+  background: white;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  @media (min-width: $breakpoint-tablet) {
+    & {
+      min-height: 72px;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .trails-logo {
+    height: 36px;
+  }
+
+  ul {
+    margin: 0 -1em;
+
+    li {
+      margin: 0 1em;
+
+      a {
+        font-size: 18px;
+        font-weight: 300;
+        word-spacing: 1px;
+        text-transform: uppercase;
+        color: $green;
+        text-decoration: none;
+
+        &:hover {
+          color: $dark-green;
+        }
+      }
+    }
+  }
+
+}

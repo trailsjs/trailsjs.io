@@ -1,0 +1,21 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+button.trails-transparent-button {
+
+  text-transform: uppercase;
+  background-image: none;
+  background-color: transparent;
+  color: $green;
+  border: 2px solid $green;
+
+  &:hover, &:focus {
+    background-image: none;
+  }
+
+  &:hover {
+    color: $white;
+    border-color: $white;
+  }
+
+}
