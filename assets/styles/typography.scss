@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
 @import 'colors.scss';
+@import 'breakpoints.scss';
 
 h1, h2, h3, h4, h5, h6, p, a, body {
   font-family: 'Lato', sans-serif;
@@ -17,4 +18,13 @@ h3 {
 body, p {
   color: $gray;
   font-weight: 300;
+}
+
+.trails-section-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  margin: 2em 0 3em 0;
+
 }
