@@ -53,7 +53,7 @@ class Features extends Component {
     return (
       <section className="trails-features">
         <div className="container">
-          <header>
+          <header className="trails-section-header">
             <h1>Blaze your own trails</h1>
           </header>
           {

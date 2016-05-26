@@ -3,18 +3,10 @@
 
 .trails-features {
 
-  header {
-    text-align: center;
-    text-transform: uppercase;
-    color: $green;
-    font-size: 1.25em;
-    letter-spacing: 3px;
-    margin: 2em 0 3em 0;
-
+  .trails-section-header {
     @media screen and (min-width: $breakpoint-tablet) {
       margin: 4em 0 5em 0;
     }
-
   }
 
 }

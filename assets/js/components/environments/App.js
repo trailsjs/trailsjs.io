@@ -4,6 +4,7 @@ import Header from './../ecosystems/Header'
 import Splash from './../ecosystems/Splash'
 import Console from './../ecosystems/Console'
 import Features from './../ecosystems/Features'
+import OtherFeatures from './../ecosystems/OtherFeatures'
 
 class App extends Component {
 
@@ -14,6 +15,7 @@ class App extends Component {
         <Splash />
         <Console />
         <Features />
+        <OtherFeatures />
       </div>
     )
   }
