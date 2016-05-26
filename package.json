@@ -65,6 +65,6 @@
   "eslintConfig": {
     "extends": "trails"
   },
-  "repository": "git@github.com:wbprice/trailsjs.io.git",
+  "repository": "git@github.com:langateam/trailsjs.io.git",
   "license": "MIT"
 }
