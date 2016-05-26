@@ -5,7 +5,10 @@
 
   background: $green;
   background-image: url('/dist/fonts/trees-and-rivers.svg'),
-                    linear-gradient($green, $blue);
+                    linear-gradient(
+                    $green,
+                    $green 25%,
+                    $blue);
 
   .container {
     display: flex;
