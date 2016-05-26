@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react'
+import Menu from 'react-burger-menu'
+
 import logo from './../../../img/trails-logo-small.svg'
 import './../../../styles/components/ecosystems/Header.scss'
 
@@ -11,17 +13,31 @@ class Header extends Component {
           <a href="#">
             <img className="trails-logo"  src={logo} alt="Trails logo" />
           </a>
-          <ul className="pure-menu-list">
-            <li className="pure-menu-item">
-              <a href="#" classNAme="pure-menu-item">About</a>
-            </li>
-            <li className="pure-menu-item">
-              <a href="#" classNAme="pure-menu-item">Features</a>
-            </li>
-            <li className="pure-menu-item">
-              <a href="#" classNAme="pure-menu-item">Documentation</a>
-            </li>
-          </ul>
+
+          {
+            this.props.smallScreen ?
+            <Menu.slide
+              width={240}
+              right
+              noOverlay>
+              <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Documentation</a>
+            </Menu.slide>
+            :
+            <ul className="pure-menu-list">
+              <li className="pure-menu-item">
+                <a href="#" className="pure-menu-item">About</a>
+              </li>
+              <li className="pure-menu-item">
+                <a href="#" className="pure-menu-item">Features</a>
+              </li>
+              <li className="pure-menu-item">
+                <a href="#" className="pure-menu-item">Documentation</a>
+              </li>
+            </ul>
+          }
+
         </div>
       </header>
     )
@@ -29,6 +45,8 @@ class Header extends Component {
 
 }
 
-Header.propTypes = {}
+Header.propTypes = {
+  smallScreen: PropTypes.bool
+}
 
 export default Header
