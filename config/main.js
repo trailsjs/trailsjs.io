@@ -21,8 +21,8 @@ module.exports = {
     require('trailpack-router'),
     require('trailpack-hapi'),
     require('trailpack-waterline'),
-    require('trailpack-footprints'),
-    require('trailpack-webpack')
+    require('trailpack-footprints')
+    // require('trailpack-webpack')
   ],
 
   /**
