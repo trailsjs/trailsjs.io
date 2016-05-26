@@ -1,0 +1,30 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.trails-call-to-action {
+
+  background-image: radial-gradient(circle farthest-side at left bottom,
+                                    $green 0%, $blue 75%);
+  padding: 2em 0;
+  text-transform: uppercase;
+  @media screen and (min-width: $breakpoint-phone) {
+    padding: 5em 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  p {
+    color: $white;
+    margin-top: .66em;
+    margin-bottom: 1.75em;
+  }
+
+}
