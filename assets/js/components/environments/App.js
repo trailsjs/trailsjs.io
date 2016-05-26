@@ -18,6 +18,18 @@ class App extends Component {
   }
 
   componentWillMount() {
+    this.checkForSmallScreen()
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.checkForSmallScreen.bind(this))
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.checkForSmallScreen.bind(this))
+  }
+
+  checkForSmallScreen() {
     this.setState({
       smallScreen: viewportSize.getWidth() < 768
     })
