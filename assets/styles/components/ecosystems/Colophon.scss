@@ -1,0 +1,23 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.trails-colophon {
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  img {
+    margin: 0 .33em;
+  }
+  img.heart { height: 16px; }
+  img.langa-logo { height: 36px; }
+
+  @media screen and (min-width: $breakpoint-phone) {
+    padding: 2em 0;
+  }
+
+}

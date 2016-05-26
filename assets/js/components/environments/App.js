@@ -6,6 +6,7 @@ import Console from './../ecosystems/Console'
 import Features from './../ecosystems/Features'
 import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
+import Colophon from './../ecosystems/Colophon'
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
         <Features />
         <OtherFeatures />
         <CallToAction />
+        <Colophon />
       </div>
     )
   }
