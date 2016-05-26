@@ -27,20 +27,73 @@
 
     li {
       margin: 0 1em;
-
-      a {
-        font-size: 18px;
-        font-weight: 300;
-        word-spacing: 1px;
-        text-transform: uppercase;
-        color: $green;
-        text-decoration: none;
-
-        &:hover {
-          color: $dark-green;
-        }
-      }
     }
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+      color: $dark-green;
+    }
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 24px;
+    height: 20px;
+    right: 12px;
+    top: 16px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $green;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    left: 0;
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: $white;
+    padding: 2.5em 0 0;
+    font-size: 1.15em;
+  }
+
+  .bm-menu-wrap {
+    top: 48px;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+
+    a {
+      margin: 0 0 1em 0;
+    }
+
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
   }
 
 }

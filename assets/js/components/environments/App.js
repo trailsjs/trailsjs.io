@@ -8,12 +8,25 @@ import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
 import Colophon from './../ecosystems/Colophon'
 
+import viewportSize from 'viewport-size'
+
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentWillMount() {
+    this.setState({
+      smallScreen: viewportSize.getWidth() < 768
+    })
+  }
 
   render() {
     return (
       <div>
-        <Header />
+        <Header smallScreen={this.state.smallScreen} />
         <Splash />
         <Console />
         <Features />
