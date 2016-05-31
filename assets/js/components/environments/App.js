@@ -8,7 +8,7 @@ import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
 import Colophon from './../ecosystems/Colophon'
 
-import viewportSize from 'viewport-size'
+// import viewportSize from 'viewport-size'
 
 class App extends Component {
 
@@ -18,15 +18,21 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.checkForSmallScreen()
+    // if (window) {
+    //   this.checkForSmallScreen()
+    // }
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.checkForSmallScreen.bind(this))
+    // if (window) {
+    //   window.addEventListener('resize', this.checkForSmallScreen.bind(this))
+    // }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.checkForSmallScreen.bind(this))
+    // if (window) {
+    //   window.removeEventListener('resize', this.checkForSmallScreen.bind(this))
+    // }
   }
 
   checkForSmallScreen() {
@@ -37,15 +43,28 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header smallScreen={this.state.smallScreen} />
-        <Splash />
-        <Console />
-        <Features />
-        <OtherFeatures />
-        <CallToAction />
-        <Colophon />
-      </div>
+
+      <html>
+        <head>
+          <meta charSet="utf-8"></meta>
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+          <link rel="stylesheet" href="dist/style.css" />
+          <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+          <title>TrailsJS</title>
+        </head>
+
+        <body>
+          <div>
+            <Header smallScreen={this.state.smallScreen} />
+            <Splash />
+            <Console />
+            <Features />
+            <OtherFeatures />
+            <CallToAction />
+            <Colophon />
+          </div>
+        </body>
+      </html>
     )
   }
 

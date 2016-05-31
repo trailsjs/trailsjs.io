@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import './../../../styles/components/organisms/Feature.scss'
 
 class Feature extends Component {
 

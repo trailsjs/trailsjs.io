@@ -8,4 +8,9 @@ module.exports = class ViewController extends Controller {
     reply.view('index')
   }
 
+  assets (request, reply) {
+    this.log.info(request)
+    reply('tryna get a file?')
+  }
+
 }

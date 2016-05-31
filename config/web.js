@@ -16,11 +16,26 @@ module.exports = {
    */
   port: process.env.PORT || 3000,
 
-  views: {
-    engines: {
-      html: require('handlebars')
+  plugins: [
+    {
+      register: require('vision'),
+      options: { }
     },
-    path: 'views'
+    {
+      register: require('inert'),
+      options: { }
+    }
+  ],
+
+  onPluginsLoaded: function (err) {
+    // Note that `this` is Trails `app` instance
+    this.packs.hapi.server.views({
+      engines: {
+        js: require('hapi-react-views')
+      },
+      relativeTo: path.resolve(__dirname, '..'),
+      path: 'dist'
+    })
   }
 
 }

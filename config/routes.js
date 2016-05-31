@@ -20,6 +20,12 @@ module.exports = [
     handler: 'ViewController.index'
   },
 
+  {
+    method: 'GET',
+    path: '/dist',
+    handler: 'ViewController.assets'
+  },
+
   /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */

@@ -1,9 +1,8 @@
 import React, { PropTypes, Component } from 'react'
-import styles from './../../../styles/components/ecosystems/Splash.scss'
 
 import Button from './../atoms/Button'
-import logo from './../../../img/trails-logo.svg'
-import treesAndRivers from './../../../img/trees-and-rivers.svg'
+// import logo from './../../../img/trails-logo.svg'
+// import treesAndRivers from './../../../img/trees-and-rivers.svg'
 
 class Splash extends Component {
 
@@ -11,7 +10,7 @@ class Splash extends Component {
     return (
       <section className="trails-splash">
         <div className="container">
-        <img className="trails-logo" src={logo} alt="trails-logo" />
+        <img className="trails-logo" src="dist/img/trails-logo.svg" alt="trails-logo" />
           <h2 className="trails-splash-description">A Modular Web Application Framework for Node.js</h2>
           <div className="trails-splash-button-tray">
             <Button label="View Docs" />

@@ -1,9 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import Menu from 'react-burger-menu'
 
-import logo from './../../../img/trails-logo-small.svg'
-import './../../../styles/components/ecosystems/Header.scss'
-
 class Header extends Component {
 
   render() {
@@ -11,7 +8,7 @@ class Header extends Component {
       <header className="trails-header pure-menu pure-menu-horizontal pure-menu-fixed">
         <div className="container">
           <a href="#">
-            <img className="trails-logo"  src={logo} alt="Trails logo" />
+            <img className="trails-logo"  src="dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
           {
