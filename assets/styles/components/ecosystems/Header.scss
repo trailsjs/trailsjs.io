@@ -6,6 +6,11 @@
   min-height: 48px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   @media (min-width: $breakpoint-tablet) {
     & {
       min-height: 72px;
@@ -28,6 +33,8 @@
 
     li {
       margin: 0 1em;
+      display: inline;
+      text-decoration: none;
     }
   }
 

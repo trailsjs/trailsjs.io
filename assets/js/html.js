@@ -15,7 +15,7 @@ const Component = React.createClass({
           <meta charSet="utf-8"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
           <link rel="stylesheet" href="dist/style.css" />
-          <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
         </head>
         <body>
           <div id="app-mount"
