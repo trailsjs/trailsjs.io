@@ -2,3 +2,4 @@ node_modules
 .tmp
 coverage
 dist
+.DS_STORE

@@ -54,6 +54,7 @@
     "viewport-size": "0.0.1",
     "vision": "^4.1.0",
     "webpack": "^1.13.1",
+    "webpack-stream": "^3.2.0",
     "winston": "^2.2"
   },
   "devDependencies": {

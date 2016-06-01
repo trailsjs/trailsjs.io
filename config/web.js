@@ -34,7 +34,12 @@ module.exports = {
         js: require('hapi-react-views')
       },
       relativeTo: path.resolve(__dirname, '..'),
-      path: 'dist'
+      path: 'dist',
+      compileOptions: {
+        renderMethod: 'renderToString',
+        layoutPath: path.join(__dirname, '..', 'dist'),
+        layout: 'html'
+      }
     })
   }
 

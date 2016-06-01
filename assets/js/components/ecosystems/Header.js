@@ -4,6 +4,7 @@ import Menu from 'react-burger-menu'
 class Header extends Component {
 
   render() {
+
     return (
       <header className="trails-header pure-menu pure-menu-horizontal pure-menu-fixed">
         <div className="container">
