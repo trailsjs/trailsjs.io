@@ -34,7 +34,7 @@ body {
   background: $white;
   margin-top: 48px !important;
   @media (min-width: $breakpoint-tablet) {
-    margin-top: 72px;
+    margin-top: 72px !important;
   }
 }
 

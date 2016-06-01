@@ -1,38 +1,54 @@
 import React, { Component, PropTypes } from 'react'
 import Menu from 'react-burger-menu'
+import viewportSize from 'viewport-size'
+import { Link } from 'react-router'
 
 class Header extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.checkForSmallScreen.bind(this))
+    this.checkForSmallScreen()
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.checkForSmallScreen.bind(this))
+  }
+
+  checkForSmallScreen() {
+    this.setState({
+      smallScreen: viewportSize.getWidth() < 768
+    })
+  }
 
   render() {
 
     return (
       <header className="trails-header">
         <div className="container">
-          <a href="#">
+          <a href="/">
             <img className="trails-logo"  src="dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
           {
-            this.props.smallScreen ?
+            this.state.smallScreen ?
             <Menu.slide
               width={240}
               right
               noOverlay>
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Documentation</a>
+              <Link to="/">About</Link>
+              <Link to="/">Features</Link>
+              <Link to="/docs">Documentation</Link>
             </Menu.slide>
             :
             <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Documentation</a>
-              </li>
+              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Features</Link></li>
+              <li><Link to="/docs">Documentation</Link></li>
             </ul>
           }
 
@@ -43,8 +59,6 @@ class Header extends Component {
 
 }
 
-Header.propTypes = {
-  smallScreen: PropTypes.bool
-}
+Header.propTypes = {}
 
 export default Header

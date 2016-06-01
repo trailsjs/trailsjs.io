@@ -1,10 +1,18 @@
 'use strict'
+
 const React = require('react')
 const ReactDOM = require('react-dom')
-const AppComponent = require('./components/environments/App.js')
+const { Router, Route, browserHistory } = require('react-router')
 
-const App = React.createFactory(AppComponent.default)
+const Index = require('./components/environments/Index').default
+const Docs = require('./components/environments/Documentation').default
+
 const mountNode = document.getElementById('app-mount')
-const serverState = window.state
 
-ReactDOM.render(App(serverState), mountNode)
+ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={Index} />
+    <Route path="/docs" component={Docs} />
+  </Router>,
+  mountNode
+)
