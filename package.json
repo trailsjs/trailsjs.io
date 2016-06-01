@@ -28,7 +28,7 @@
     "gulp-imagemin": "^3.0.1",
     "gulp-sass": "^2.3.1",
     "handlebars": "^4.0.5",
-    "hapi-react-views": "git@github.com:wbprice/hapi-react-views.git",
+    "hapi-react-views": "https://github.com/wbprice/hapi-react-views.git",
     "inert": "^4.0.0",
     "node-sass": "^3.7.0",
     "purecss": "^0.6.0",
