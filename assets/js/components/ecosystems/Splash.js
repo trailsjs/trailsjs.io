@@ -1,8 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 
 import Button from './../atoms/Button'
-// import logo from './../../../img/trails-logo.svg'
-// import treesAndRivers from './../../../img/trees-and-rivers.svg'
 
 class Splash extends Component {
 
