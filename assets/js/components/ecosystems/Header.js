@@ -1,17 +1,15 @@
 import React, { Component, PropTypes } from 'react'
 import Menu from 'react-burger-menu'
 
-import logo from './../../../img/trails-logo-small.svg'
-import './../../../styles/components/ecosystems/Header.scss'
-
 class Header extends Component {
 
   render() {
+
     return (
-      <header className="trails-header pure-menu pure-menu-horizontal pure-menu-fixed">
+      <header className="trails-header">
         <div className="container">
           <a href="#">
-            <img className="trails-logo"  src={logo} alt="Trails logo" />
+            <img className="trails-logo"  src="dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
           {
@@ -25,15 +23,15 @@ class Header extends Component {
               <a href="#">Documentation</a>
             </Menu.slide>
             :
-            <ul className="pure-menu-list">
-              <li className="pure-menu-item">
-                <a href="#" className="pure-menu-item">About</a>
+            <ul>
+              <li>
+                <a href="#">About</a>
               </li>
-              <li className="pure-menu-item">
-                <a href="#" className="pure-menu-item">Features</a>
+              <li>
+                <a href="#">Features</a>
               </li>
-              <li className="pure-menu-item">
-                <a href="#" className="pure-menu-item">Documentation</a>
+              <li>
+                <a href="#">Documentation</a>
               </li>
             </ul>
           }

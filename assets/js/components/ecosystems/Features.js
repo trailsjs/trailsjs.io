@@ -1,10 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import './../../../styles/components/ecosystems/Features.scss'
-
-import community from './../../../img/trails-features-community.svg'
-import modern from './../../../img/trails-features-modern.svg'
-import modular from './../../../img/trails-features-modular.svg'
-import trailsmix from './../../../img/trails-features-trailsmix.svg'
 
 import Feature from './../organisms/Feature'
 
@@ -16,7 +10,7 @@ const features = [
            wolf vice, blog post- ironic authentic
            locavore. Brooklyn chambray mixtape
            vegan hashtag chia.`,
-    image: modern
+    image: 'dist/img/trails-features-modern.svg'
   },
   {
     title: 'Modular, Unopinionated',
@@ -25,7 +19,7 @@ const features = [
            wolf vice, blog post- ironic authentic
            locavore. Brooklyn chambray mixtape
            vegan hashtag chia.`,
-    image: modular
+    image: 'dist/img/trails-features-modular.svg'
   },
   {
     title: 'Community-Driven',
@@ -34,7 +28,7 @@ const features = [
            wolf vice, blog post- ironic authentic
            locavore. Brooklyn chambray mixtape
            vegan hashtag chia.`,
-    image: community
+    image: 'dist/img/trails-features-community.svg'
   },
   {
     title: 'Trailsmix',
@@ -43,7 +37,7 @@ const features = [
            wolf vice, blog post- ironic authentic
            locavore. Brooklyn chambray mixtape
            vegan hashtag chia.`,
-    image: trailsmix
+    image: 'dist/img/trails-features-trailsmix.svg'
   }
 ]
 

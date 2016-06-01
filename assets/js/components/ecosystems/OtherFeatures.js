@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import './../../../styles/components/ecosystems/OtherFeatures.scss'
 
 import OtherFeature from './../organisms/OtherFeature'
 

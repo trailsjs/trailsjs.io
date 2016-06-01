@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import './../../../styles/components/ecosystems/CallToAction.scss'
 import Button from './../atoms/Button'
 
 class CallToAction extends Component {

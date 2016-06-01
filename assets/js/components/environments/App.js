@@ -7,7 +7,6 @@ import Features from './../ecosystems/Features'
 import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
 import Colophon from './../ecosystems/Colophon'
-
 import viewportSize from 'viewport-size'
 
 class App extends Component {
@@ -17,12 +16,9 @@ class App extends Component {
     this.state = {}
   }
 
-  componentWillMount() {
-    this.checkForSmallScreen()
-  }
-
   componentDidMount() {
     window.addEventListener('resize', this.checkForSmallScreen.bind(this))
+    this.checkForSmallScreen()
   }
 
   componentWillUnmount() {

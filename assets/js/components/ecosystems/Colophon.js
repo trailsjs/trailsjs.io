@@ -1,8 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import './../../../styles/components/ecosystems/Colophon.scss'
-
-import heart from './../../../img/heart.svg'
-import langaLogo from './../../../img/langa-logo.svg'
 
 class Colophon extends Component {
 
@@ -12,10 +8,10 @@ class Colophon extends Component {
         <div className="container">
           <p>
             <span>Made with </span>
-            <img className="heart" src={heart} alt="love" />
+            <img className="heart" src="dist/img/heart.svg" alt="love" />
             <span>by you and </span>
             <a href="http://langa.io/">
-              <img className="langa-logo" src={langaLogo} alt="langa" />
+              <img className="langa-logo" src="dist/img/langa-logo.svg" alt="langa" />
             </a>
           </p>
         </div>
