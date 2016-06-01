@@ -1,12 +1,5 @@
 import React, { PropTypes, Component } from 'react'
 
-// import community from './../../../img/trails-features-community.svg'
-// import modern from './../../../img/trails-features-modern.svg'
-// import modular from './../../../img/trails-features-modular.svg'
-// import trailsmix from './../../../img/trails-features-trailsmix.svg'
-
-const community = ''
-
 import Feature from './../organisms/Feature'
 
 const features = [
