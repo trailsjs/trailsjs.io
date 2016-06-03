@@ -8,5 +8,5 @@
 'use strict'
 
 module.exports = {
-  engine: 'handlebars'
+  engine: 'hapi-react-views'
 }

@@ -1,5 +1,4 @@
 import React, { PropTypes, Component } from 'react'
-import './../../../styles/components/atoms/Button.scss'
 
 class Button extends Component {
 
@@ -7,7 +6,7 @@ class Button extends Component {
     return (
       <button
         onClick={this.props.onClick}
-        name={this.props.label} className="pure-button trails-transparent-button">
+        name={this.props.label} className="trails-button trails-transparent-button">
         {this.props.label}
       </button>
     )

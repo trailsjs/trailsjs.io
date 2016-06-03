@@ -12,12 +12,21 @@
 module.exports = [
 
   /**
-   * Render the HelloWorld view
+   * Render the index view
    */
   {
     method: 'GET',
     path: '/',
     handler: 'ViewController.index'
+  },
+
+  /**
+   * Render the documentation view
+   */
+  {
+    method: 'GET',
+    path: '/docs',
+    handler: 'ViewController.documentation'
   },
 
   /**

@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import './../../../styles/components/ecosystems/Console.scss'
 
 class Console extends Component {
 
