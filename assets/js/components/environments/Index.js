@@ -7,34 +7,13 @@ import Features from './../ecosystems/Features'
 import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
 import Colophon from './../ecosystems/Colophon'
-import viewportSize from 'viewport-size'
 
-class App extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.checkForSmallScreen.bind(this))
-    this.checkForSmallScreen()
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.checkForSmallScreen.bind(this))
-  }
-
-  checkForSmallScreen() {
-    this.setState({
-      smallScreen: viewportSize.getWidth() < 768
-    })
-  }
+class Index extends Component {
 
   render() {
     return (
       <div>
-        <Header smallScreen={this.state.smallScreen} />
+        <Header />
         <Splash />
         <Console />
         <Features />
@@ -47,6 +26,6 @@ class App extends Component {
 
 }
 
-App.propTypes = {}
+Index.propTypes = {}
 
-export default App
+export default Index
