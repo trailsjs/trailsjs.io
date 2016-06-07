@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import Header from './../ecosystems/Header'
+import Layout from './../environments/Layout'
 
 class Documentation extends Component {
 
@@ -9,12 +10,12 @@ class Documentation extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <Header />
         <article className="container">
           <h1>Documentation page!</h1>
         </article>
-      </div>
+      </Layout>
     )
   }
 

@@ -29,79 +29,74 @@
   }
 
   ul {
-    margin: 0 -1em;
-
     li {
-      margin: 0 1em;
-      display: inline;
-      text-decoration: none;
+      list-style-type: none;
+
+      a {
+        font-size: 18px;
+        font-weight: 300;
+        word-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $green;
+
+        &:hover {
+          color: $dark-green;
+        }
+
+      }
     }
   }
 
-  a {
-    font-size: 18px;
-    font-weight: 300;
-    word-spacing: 1px;
-    text-transform: uppercase;
-    color: $green;
-    text-decoration: none;
-
+  #menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: $blue url(img/menu-icon.png);
     &:hover {
-      color: $dark-green;
-    }
-  }
-
-  /* Position and sizing of burger button */
-  .bm-burger-button {
-    position: fixed;
-    width: 24px;
-    height: 20px;
-    right: 12px;
-    top: 16px;
-  }
-
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: $blue;
-  }
-
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-
-  /* Color/shape of close button cross */
-  .bm-cross {
-    left: 0;
-    background: #bdc3c7;
-  }
-
-  /* General sidebar styles */
-  .bm-menu {
-    background: $white;
-    padding: 2.5em 0 0;
-    font-size: 1.15em;
-  }
-
-  .bm-menu-wrap {
-    top: 48px;
-  }
-
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-
-    a {
-      margin: 0 0 1em 0;
+      background-color: $green;
     }
 
   }
 
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
+  @media screen and (min-width: $breakpoint-tablet) {
+    ul {
+      margin: 0 -1em;
+
+      li {
+        margin: 0 1em;
+        display: inline;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-phone) {
+    #menu-icon {
+      display: inline-block;
+      margin-bottom: -3px;
+    }
+
+    nav ul, nav:active ul {
+      display: none;
+      position: fixed;
+      padding: 1em;
+      background: #fff;
+      top: 36px;
+      right: 4px;
+      border-radius: 4px;
+    }
+
+    nav li {
+      text-align: left;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    nav:hover ul {
+      display: block;
+    }
+
   }
 
 }
