@@ -8,7 +8,7 @@ import OtherFeatures from './../ecosystems/OtherFeatures'
 import CallToAction from './../ecosystems/CallToAction'
 import Colophon from './../ecosystems/Colophon'
 
-class App extends Component {
+class Index extends Component {
 
   render() {
     return (
@@ -25,6 +25,6 @@ class App extends Component {
 
 }
 
-App.propTypes = {}
+Index.propTypes = {}
 
-export default App
+export default Index

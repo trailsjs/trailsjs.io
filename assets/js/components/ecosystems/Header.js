@@ -12,15 +12,12 @@ class Header extends Component {
           </a>
 
           <nav>
-
             <a href="#" id="menu-icon"></a>
-
-          <ul>
+            <ul>
               <li><a href="/">About</a></li>
               <li><a href="/">Features</a></li>
               <li><a href="/docs">Documentation</a></li>
             </ul>
-
           </nav>
 
         </div>
@@ -30,8 +27,6 @@ class Header extends Component {
 
 }
 
-Header.propTypes = {
-  smallScreen: PropTypes.bool
-}
+Header.propTypes = {}
 
 export default Header
