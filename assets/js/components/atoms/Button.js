@@ -4,18 +4,18 @@ class Button extends Component {
 
   render() {
     return (
-      <button
-        onClick={this.props.onClick}
-        name={this.props.label} className="trails-button trails-transparent-button">
+      <a
+        href={this.props.href || '#'}
+        className="trails-button trails-transparent-button">
         {this.props.label}
-      </button>
+      </a>
     )
   }
 
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func,
+  href: PropTypes.string,
   label: PropTypes.string.isRequired
 }
 

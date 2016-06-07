@@ -42,7 +42,8 @@
   .trails-splash-button-tray {
     display: flex;
     flex-direction: column;
-    button {
+
+    .trails-button {
       margin-bottom: .5em;
     }
 
@@ -51,7 +52,7 @@
       flex-direction: row;
       justify-content: space-between;
       margin: 0 -1em;
-      button {
+      .trails-button {
         margin: 0 1em;
       }
     }
