@@ -1,12 +1,13 @@
 @import './../../breakpoints.scss';
 @import './../../colors.scss';
 
-button.trails-button {
+.trails-button {
   padding: 0.5em 1em;
   border-radius: 2px;
+  text-decoration: none;
 }
 
-button.trails-transparent-button {
+.trails-transparent-button {
 
   text-transform: uppercase;
   background-image: none;
