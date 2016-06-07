@@ -9,6 +9,7 @@
   max-width: 720px;
   margin: 1em auto 0 auto;
   color: $light-gray;
+  overflow-x: scroll;
 
   @media screen and (min-width: $breakpoint-tablet) {
     margin: -3em auto 0 auto;

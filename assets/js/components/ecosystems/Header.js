@@ -8,33 +8,15 @@ class Header extends Component {
     return (
       <header className="trails-header">
         <div className="container">
-          <a href="#">
+          <a href="/">
             <img className="trails-logo"  src="dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
-          {
-            this.props.smallScreen ?
-            <Menu.slide
-              width={240}
-              right
-              noOverlay>
-              <a href="#">About</a>
-              <a href="#">Features</a>
-              <a href="#">Documentation</a>
-            </Menu.slide>
-            :
-            <ul>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Documentation</a>
-              </li>
-            </ul>
-          }
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Features</a></li>
+            <li><a href="/docs">Documentation</a></li>
+          </ul>
 
         </div>
       </header>
