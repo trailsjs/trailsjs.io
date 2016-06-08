@@ -8,10 +8,10 @@ class Colophon extends Component {
         <div className="container">
           <p>
             <span>Made with </span>
-            <img className="heart" src="dist/img/heart.svg" alt="love" />
+            <img className="heart" src="/dist/img/heart.svg" alt="love" />
             <span>by you and </span>
             <a href="http://langa.io/">
-              <img className="langa-logo" src="dist/img/langa-logo.svg" alt="langa" />
+              <img className="langa-logo" src="/dist/img/langa-logo.svg" alt="langa" />
             </a>
           </p>
         </div>

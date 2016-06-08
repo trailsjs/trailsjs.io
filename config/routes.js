@@ -29,6 +29,12 @@ module.exports = [
     handler: 'ViewController.documentation'
   },
 
+  {
+    method: 'GET',
+    path: '/docs/{file*}',
+    handler: 'ViewController.documentation'
+  },
+
   /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */

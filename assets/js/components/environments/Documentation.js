@@ -1,5 +1,9 @@
 import React, { PropTypes, Component } from 'react'
+
 import Header from './../ecosystems/Header'
+import DocumentationMenu from './../ecosystems/DocumentationMenu'
+import Markdown from 'react-markdown'
+
 import Layout from './../environments/Layout'
 
 class Documentation extends Component {
@@ -13,7 +17,7 @@ class Documentation extends Component {
       <Layout>
         <Header />
         <article className="container">
-          <h1>Documentation page!</h1>
+          <Markdown source={this.props.markdown} />
         </article>
       </Layout>
     )
@@ -21,6 +25,8 @@ class Documentation extends Component {
 
 }
 
-Documentation.propTypes = {}
+Documentation.propTypes = {
+  markdown: PropTypes.string
+}
 
 export default Documentation
