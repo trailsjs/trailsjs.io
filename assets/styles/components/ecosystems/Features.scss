@@ -1,0 +1,12 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.trails-features {
+
+  .trails-section-header {
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 4em 0 5em 0;
+    }
+  }
+
+}

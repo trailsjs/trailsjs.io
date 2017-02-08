@@ -1,0 +1,53 @@
+@import './../../breakpoints.scss';
+@import './../../colors.scss';
+
+.trails-feature {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3em;
+
+  .trails-feature-text, .trails-feature-image {
+    margin-bottom: 1em;
+  }
+
+  .trails-feature-text {
+    text-align: center;
+    h3 { margin-top: 0; }
+  }
+
+  .trails-feature-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1.5em auto;
+  }
+
+}
+
+@media screen and (min-width: $breakpoint-phone) {
+
+  .trails-feature {
+    margin: 0 -1em 4em -1em;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25em;
+
+    .trails-feature-text, .trails-feature-image {
+      flex: 1;
+      margin: 0 2em;
+    }
+
+    .trails-feature-text {
+      text-align: left;
+      line-height: 1.25em;
+    }
+
+    .trails-feature-image {}
+
+    &[data-reverse=true] {
+      flex-direction: row-reverse;
+      .trails-feature-image {}
+    }
+
+  }
+
+}
