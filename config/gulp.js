@@ -1,6 +1,8 @@
 'use strict'
 
 const gulp = require('gulp')
+const plumber = require('gulp-plumber')
+const watch = require('gulp-watch')
 const babel = require('gulp-babel')
 const webpack = require('webpack-stream')
 const sass = require('gulp-sass')
@@ -12,14 +14,15 @@ module.exports = {
 
   tasks: {
     default: ['compileTemplate', 'compileStyles', 'image', 'bundle'],
-    compileTemplate: () => {
+
+    compileTemplate () {
       return gulp.src('./assets/js/**/*.js')
         .pipe(babel({
           presets: ['react', 'es2015', 'stage-0']
         }))
         .pipe(gulp.dest('dist'))
     },
-    compileStyles: () => {
+    compileStyles () {
       return gulp.src('./assets/styles/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist'))
@@ -29,8 +32,13 @@ module.exports = {
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
     },
-    bundle: () => {
-      return gulp.src('assets/js/client.js')
+    bundle (done) {
+      gulp.src('assets/js/client.js')
+        .pipe(watch([
+          './assets/js/**/*.js',
+          './assets/styles/**.*.scss'
+        ]))
+        .pipe(plumber())
         .pipe(webpack({
           output: {
             filename: 'client.js'
@@ -51,7 +59,7 @@ module.exports = {
           }
         }))
         .pipe(gulp.dest('dist'))
+      done()
     }
   }
-
 }
