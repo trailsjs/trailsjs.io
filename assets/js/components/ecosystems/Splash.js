@@ -1,15 +1,19 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
 import Button from './../atoms/Button'
 
-class Splash extends Component {
+export default class Splash extends Component {
+
+  static get propTypes () {
+    return { }
+  }
 
   render() {
     return (
       <section className="trails-splash">
         <div className="container">
         <img className="trails-logo" src="dist/img/trails-logo.svg" alt="trails-logo" />
-          <h2 className="trails-splash-description">A Modular Web Application Framework for Node.js</h2>
+          <h2 className="trails-splash-description">A Modern Web Application Framework for Node.js</h2>
           <div className="trails-splash-button-tray">
             <Button label="View Docs" />
             <Button label="Get Started" />
@@ -20,7 +24,3 @@ class Splash extends Component {
   }
 
 }
-
-Splash.propTypes = {}
-
-export default Splash

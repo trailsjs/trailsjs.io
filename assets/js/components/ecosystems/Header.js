@@ -1,13 +1,12 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import Menu from 'react-burger-menu'
 import viewportSize from 'viewport-size'
 import { Link } from 'react-router'
 
-class Header extends Component {
+export default class Header extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {}
+  static get propTypes () {
+    return { }
   }
 
   componentDidMount() {
@@ -40,15 +39,17 @@ class Header extends Component {
               width={240}
               right
               noOverlay>
-              <Link to="/">About</Link>
-              <Link to="/">Features</Link>
-              <Link to="/docs">Documentation</Link>
+              <Link to="/start">Start</Link>
+              <Link to="/docs">Docs</Link>
+              <Link to="/plugins">Plugins</Link>
+              <Link to="/support">Support</Link>
             </Menu.slide>
             :
             <ul>
-              <li><Link to="/">About</Link></li>
-              <li><Link to="/">Features</Link></li>
-              <li><Link to="/docs">Documentation</Link></li>
+              <Link to="/start">Start</Link>
+              <li><Link to="/docs">Docs</Link></li>
+              <li><Link to="/plugins">Plugins</Link></li>
+              <Link to="/support">Support</Link>
             </ul>
           }
 
@@ -57,8 +58,8 @@ class Header extends Component {
     )
   }
 
+  constructor (props) {
+    super(props)
+    this.state = { }
+  }
 }
-
-Header.propTypes = {}
-
-export default Header
