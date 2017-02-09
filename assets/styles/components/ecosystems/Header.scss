@@ -29,7 +29,7 @@
   }
 
   ul {
-    margin: 0 -1em;
+    margin: 0;
 
     li {
       margin: 0 1em;
@@ -45,6 +45,7 @@
     text-transform: uppercase;
     color: $green;
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       color: $dark-green;
@@ -103,5 +104,4 @@
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
-
 }

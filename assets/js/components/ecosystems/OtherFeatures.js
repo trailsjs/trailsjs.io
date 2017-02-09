@@ -1,43 +1,31 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 
 import OtherFeature from './../organisms/OtherFeature'
 
 const features = [
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '5,000',
+    text: 'Monthly Downloads'
   },
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '1,400',
+    text: 'Github Followers'
   },
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '100+',
+    text: 'Contributors'
   },
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '100+',
+    text: 'Plugins'
   },
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '$750',
+    text: 'Paid Issue Bounties'
   },
   {
-    text: `Wayfarers green juice flexitarian cornhole
-          trust fund. Master cleanse photo booth
-          wolf vice, blog post- ironic authentic
-          locavore.`
+    title: '2.0.2',
+    text: 'Current Version'
   }
 ]
 
@@ -48,14 +36,14 @@ class MoreFeatures extends Component {
       <section className="trails-more-features">
         <div className="container">
           <header className="trails-section-header">
-            <h2>Features</h2>
+            <h2>Quick Look</h2>
           </header>
-
           <div className="trails-more-features-content">
             {features.map((feature, index) => {
               return (
                 <OtherFeature
                   key={index}
+                  title={feature.title}
                   text={feature.text} />
               )
             })}

@@ -46,10 +46,10 @@ export default class Header extends Component {
             </Menu.slide>
             :
             <ul>
-              <Link to="/start">Start</Link>
+              <li><Link to="/start">Start</Link></li>
               <li><Link to="/docs">Docs</Link></li>
               <li><Link to="/plugins">Plugins</Link></li>
-              <Link to="/support">Support</Link>
+              <li><Link to="/support">Support</Link></li>
             </ul>
           }
 

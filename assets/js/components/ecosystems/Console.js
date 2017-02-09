@@ -6,7 +6,7 @@ class Console extends Component {
     return (
       <section className="trails-console">
         <div className="container">
-          <pre>$ npm install -g generator-trails</pre>
+          <pre>$ npm install -g yo generator-trails</pre>
           <pre>$ yo trails</pre>
           <pre>$ node server.js</pre>
         </div>

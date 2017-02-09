@@ -7,8 +7,8 @@
   background-image: url('img/trees-and-rivers.svg'),
                     linear-gradient(
                     $green,
-                    $green 25%,
-                    $blue);
+                    $green 5%,
+                    $blue 95%);
 
   .container {
     display: flex;
@@ -44,7 +44,9 @@
     display: flex;
     flex-direction: column;
     button {
+      background-color: $blue;
       margin-bottom: .5em;
+      cursor: pointer;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {

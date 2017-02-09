@@ -5,6 +5,7 @@ class OtherFeature extends Component {
   render() {
     return (
       <div className="trails-other-feature">
+        <h3>{this.props.title}</h3>
         <p>{this.props.text}</p>
       </div>
     )
@@ -13,7 +14,8 @@ class OtherFeature extends Component {
 }
 
 OtherFeature.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default OtherFeature

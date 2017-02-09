@@ -4,7 +4,7 @@
 .trails-call-to-action {
 
   background-image: radial-gradient(circle farthest-side at left bottom,
-                                    $green 0%, $blue 75%);
+                                    $green 5%, $blue 65%);
   padding: 2em 0;
   text-transform: uppercase;
   @media screen and (min-width: $breakpoint-phone) {
@@ -25,6 +25,10 @@
     color: $white;
     margin-top: .66em;
     margin-bottom: 1.75em;
+  }
+
+  button {
+    cursor: pointer;
   }
 
 }
