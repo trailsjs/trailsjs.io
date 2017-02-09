@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 7
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/54f8a1e753f859f5ca1a
+deploy:
+  provider: npm
+  email: hello@trailsjs.io
+  api_key:
+    secure: qMv5Zci8UWmAfKCCAQ0cenxha7XuunSRRFZbJQ6U+9OEsp4yEp8ciwV4e03tGohwS+Lbvg0l801eOCqYDZ4+Fpt5qmsXroCoZwDU+OI5gESqBCPtfOadOLCQJf6dbb2Se6L0YzyPtAf0KWkHS9iSWcZWsZGSy3hRHQHUWcdTQz17melrZTEph1NxnHlXTNeDKagpWINr+RS8NHJnUKcXIpTYTr56FcmhsJut7iUQli2ivn6B9cfU0MjtdbgG2HhZKo8OBK1QR57m7PFXhFs0ZixkDJTqCVgJZwa2txcstuybXKk0tZPglnDlWEazKy4d9iyw3MsSLpRI5ogx7irRlqbDCTJT7Y4G/xWmEyt8N7Fi3sKSdOMyZ/N8wplCRUSq6tHib2CTcr8e70L0S2HWX1zNW6uqt97lZnSJVtC/yLc2EBSIU0TlLUq/0pj8XuYkQXLi3xMw5bVioGIn1Ldztgpfx+6JoU253bDPUtCON8V/z5uSMAyEN4uPsjhP/yPVYg9IT3+6XQ7T+T6Gu9PX0xqilc69PFmx5gSWxfp2KmqmP161+P6iahSp4l8aldl1Pm1mal2bdHB/str/Dg7gs/V8O2VDlmEPtUjVG0BMGSYFaUBxEJRDrKclWabzUVW+3v0JCMdpOxSb17w8UFwW5O51dRr7FZQJghKlZwvxJ0c=
+  on:
+    tags: true
+    repo: trailsjs/trailsjs.io
