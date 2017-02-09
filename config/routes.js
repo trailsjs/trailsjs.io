@@ -30,6 +30,33 @@ module.exports = [
   },
 
   /**
+   * Render the get started view
+   */
+  {
+    method: 'GET',
+    path: '/start',
+    handler: 'ViewController.start'
+  },
+
+  /**
+   * Render the documentation view
+   */
+  {
+    method: 'GET',
+    path: '/plugins',
+    handler: 'ViewController.plugins'
+  },
+
+  /**
+   * Render the documentation view
+   */
+  {
+    method: 'GET',
+    path: '/support',
+    handler: 'ViewController.support'
+  },
+
+  /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */
   {

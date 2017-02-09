@@ -1,8 +1,8 @@
 'use strict'
 
 const gulp = require('gulp')
-const plumber = require('gulp-plumber')
-const watch = require('gulp-watch')
+//const plumber = require('gulp-plumber')
+//const watch = require('gulp-watch')
 const babel = require('gulp-babel')
 const webpack = require('webpack-stream')
 const sass = require('gulp-sass')
@@ -32,13 +32,8 @@ module.exports = {
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
     },
-    bundle (done) {
+    bundle () {
       gulp.src('assets/js/client.js')
-        .pipe(watch([
-          './assets/js/**/*.js',
-          './assets/styles/**.*.scss'
-        ]))
-        .pipe(plumber())
         .pipe(webpack({
           output: {
             filename: 'client.js'
@@ -59,7 +54,6 @@ module.exports = {
           }
         }))
         .pipe(gulp.dest('dist'))
-      done()
     }
   }
 }

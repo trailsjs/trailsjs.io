@@ -1,6 +1,10 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
-class Colophon extends Component {
+export default class Colophon extends Component {
+
+  static get propTypes () {
+    return { }
+  }
 
   render() {
     return (
@@ -18,9 +22,4 @@ class Colophon extends Component {
       </section>
     )
   }
-
 }
-
-Colophon.propTypes = {}
-
-export default Colophon

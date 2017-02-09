@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 import Button from './../atoms/Button'
 
@@ -15,8 +16,8 @@ export default class Splash extends Component {
         <img className="trails-logo" src="dist/img/trails-logo.svg" alt="trails-logo" />
           <h2 className="trails-splash-description">A Modern Web Application Framework for Node.js</h2>
           <div className="trails-splash-button-tray">
-            <Button label="View Docs" />
-            <Button label="Get Started" />
+            <Link to="/doc"><Button label="View Docs" /></Link>
+            <Link to="/start"><Button label="Get Started" /></Link>
           </div>
         </div>
       </section>

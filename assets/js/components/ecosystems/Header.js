@@ -40,14 +40,14 @@ export default class Header extends Component {
               right
               noOverlay>
               <Link to="/start">Start</Link>
-              <Link to="/docs">Docs</Link>
+              <Link to="/doc">Docs</Link>
               <Link to="/plugins">Plugins</Link>
               <Link to="/support">Support</Link>
             </Menu.slide>
             :
             <ul>
               <li><Link to="/start">Start</Link></li>
-              <li><Link to="/docs">Docs</Link></li>
+              <li><Link to="/doc">Docs</Link></li>
               <li><Link to="/plugins">Plugins</Link></li>
               <li><Link to="/support">Support</Link></li>
             </ul>

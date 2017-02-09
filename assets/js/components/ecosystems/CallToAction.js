@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import Button from './../atoms/Button'
 
 class CallToAction extends Component {
@@ -8,7 +9,7 @@ class CallToAction extends Component {
         <div className="container">
           <h2>Try Trails</h2>
           <p>Build apps your way</p>
-          <Button label="Get Started" />
+          <Link to="/start"><Button label="Get Started" /></Link>
         </div>
       </section>
     )
