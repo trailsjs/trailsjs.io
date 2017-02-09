@@ -6,9 +6,9 @@ const features = [
     title: 'Modern, Concise',
     text: `
       Trails represents a new, advanced generation of Node.js framework,
-      unencumbered by the tumultuous legacy of Javascript. The codebase
-      is entirely in the ES6/ES7 dialect, which improves performance,
-      maintainability, stability, and security.
+      unencumbered by the tumultuous legacy of Javascript. Designed around the
+      microservices pattern, the codebase is entirely in the ES6/ES7 dialect,
+      which improves performance, testability, stability, and security.
     `,
     image: 'dist/img/trails-features-modern.svg'
   },

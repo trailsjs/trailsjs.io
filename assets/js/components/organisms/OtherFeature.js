@@ -5,7 +5,7 @@ class OtherFeature extends Component {
   render() {
     return (
       <div className="trails-other-feature">
-        <h3>{this.props.title}</h3>
+        <h2>{this.props.title}</h2>
         <p>{this.props.text}</p>
       </div>
     )

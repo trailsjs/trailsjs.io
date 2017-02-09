@@ -8,7 +8,7 @@
   padding: 2em 0;
   text-transform: uppercase;
   @media screen and (min-width: $breakpoint-phone) {
-    padding: 5em 0;
+    padding: 3em 0;
   }
 
   .container {
@@ -19,7 +19,7 @@
 
   h2 {
     font-size: 2em;
-    margin: 0;
+    margin: 0.5em;
   }
   p {
     color: $white;
@@ -28,6 +28,7 @@
   }
 
   button {
+    background-color: $blue;
     cursor: pointer;
   }
 
