@@ -24,7 +24,9 @@ module.exports = {
     },
     compileStyles () {
       return gulp.src('./assets/styles/style.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+          includePaths: [ './node_modules' ]
+        }).on('error', sass.logError))
         .pipe(gulp.dest('dist'))
     },
     image: () => {
@@ -49,7 +51,7 @@ module.exports = {
             },
             {
               test: /\.(css|scss)$/,
-              loaders: ['style', 'css', 'sass']
+              loaders: ['style-loader', 'css-loader', 'sass-loader']
             }]
           }
         }))

@@ -18,6 +18,7 @@ export default class IndexPage extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
           <link rel="stylesheet" href="dist/style.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
 					<script dangerouslySetInnerHTML={{__html: `
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

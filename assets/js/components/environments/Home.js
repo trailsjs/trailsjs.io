@@ -1,14 +1,14 @@
-import React, { PropTypes, Component } from 'react'
+import React, { Component } from 'react'
 
-import Header from './../ecosystems/Header'
-import Splash from './../ecosystems/Splash'
-import Console from './../ecosystems/Console'
-import Features from './../ecosystems/Features'
-import OtherFeatures from './../ecosystems/OtherFeatures'
-import CallToAction from './../ecosystems/CallToAction'
-import Colophon from './../ecosystems/Colophon'
+import Splash from '../ecosystems/Splash'
+import Header from '../ecosystems/Header'
+import Colophon from '../ecosystems/Colophon'
+import Console from '../ecosystems/Console'
+import Features from '../ecosystems/Features'
+import OtherFeatures from '../ecosystems/OtherFeatures'
+import CallToAction from '../ecosystems/CallToAction'
 
-class Index extends Component {
+export default class Home extends Component {
 
   render() {
     return (
@@ -23,9 +23,4 @@ class Index extends Component {
       </div>
     )
   }
-
 }
-
-Index.propTypes = {}
-
-export default Index

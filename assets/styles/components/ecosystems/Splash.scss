@@ -1,5 +1,5 @@
-@import './../../breakpoints.scss';
-@import './../../colors.scss';
+@import '../../breakpoints.scss';
+@import '../../colors.scss';
 
 .trails-splash {
 
@@ -21,6 +21,19 @@
       padding-bottom: 5em;
     }
   }
+
+	.ribbon {
+		top: auto;
+		font-family: "open sans";
+		&:before, &:after {
+			background-color: $brown;
+      font-weight: 300;
+      font-size: 13px;
+		}
+		&:hover {
+			opacity: 0.95;
+		}
+	}
 
   .trails-logo {
     max-width: 240px;

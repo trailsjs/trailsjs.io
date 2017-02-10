@@ -17,6 +17,7 @@
     "documentation"
   ],
   "dependencies": {
+    "github-fork-ribbon-css": "^0.2.1",
     "handlebars": "^4.0.5",
     "hapi-react-views": "^9.2.1",
     "inert": "^4.0.0",

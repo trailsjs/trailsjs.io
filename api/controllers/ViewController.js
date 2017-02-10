@@ -1,27 +1,20 @@
 'use strict'
 
-const Controller = require('trails-controller')
-
 module.exports = class ViewController extends Controller {
 
-  index (request, reply) {
-    reply.view('components/environments/Home')
+  static get pageMapping () {
+    return {
+      doc: 'Documentation',
+      start: 'Start',
+      plugins: 'Plugins',
+      support: 'Support'
+    }
   }
 
-  documentation (request, reply) {
-    reply.view('components/environments/Documentation')
-  }
+  page (request, reply) {
+    const page = request.params.page
 
-  start (request, reply) {
-    reply.view('components/environments/Start')
-  }
-
-  plugins (request, reply) {
-    reply.view('components/environments/Plugins')
-  }
-
-  support (request, reply) {
-    reply.view('components/environments/Support')
+    reply.view(`components/environments/${ViewController[page] || 'Home'}`)
   }
 
 }

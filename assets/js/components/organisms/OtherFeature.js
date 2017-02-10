@@ -1,21 +1,22 @@
 import React, { Component, PropTypes } from 'react'
 
-class OtherFeature extends Component {
+export default class OtherFeature extends Component {
+  static get propTypes () {
+    return {
+      text: PropTypes.string,
+      title: PropTypes.string,
+      url: PropTypes.string
+    }
+  }
 
   render() {
     return (
       <div className="trails-other-feature">
-        <h2>{this.props.title}</h2>
-        <p>{this.props.text}</p>
+        <a href={this.props.url} target="_blank">
+          <h2>{this.props.title}</h2>
+          <p>{this.props.text}</p>
+        </a>
       </div>
     )
   }
-
 }
-
-OtherFeature.propTypes = {
-  text: PropTypes.string,
-  title: PropTypes.string
-}
-
-export default OtherFeature
