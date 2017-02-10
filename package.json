@@ -10,10 +10,11 @@
   },
   "main": "index.js",
   "keywords": [
-    "Trails",
-    "Langa",
+    "langa",
     "trails",
-    "trailsjs"
+    "trailsjs",
+    "docs",
+    "documentation"
   ],
   "dependencies": {
     "handlebars": "^4.0.5",
