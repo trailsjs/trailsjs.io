@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+//import Trailmix from 'trailmix/src/components/ecosystems/Takeahike'
 import {
   Header,
   Colophon,
