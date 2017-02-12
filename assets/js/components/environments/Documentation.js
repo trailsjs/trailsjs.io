@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-
-import Header from '../ecosystems/Header'
-import Colophon from '../ecosystems/Colophon'
+import {
+  Header,
+  Colophon,
+  TextSplash
+} from '../ecosystems'
 
 export default class Documentation extends Component {
 
@@ -13,8 +15,8 @@ export default class Documentation extends Component {
     return (
       <div>
         <Header />
+        <TextSplash title="Documentation" subtitle="Everything you need to know" />
         <article className="container">
-          <h1>Documentation page!</h1>
         </article>
         <Colophon />
       </div>

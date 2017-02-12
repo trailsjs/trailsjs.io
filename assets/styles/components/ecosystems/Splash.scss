@@ -3,6 +3,15 @@
 
 .trails-splash {
 
+  .trails-splash-title {
+    color: $blue;
+    font-size: 4em;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
   background: $green;
   background-image: url('img/trees-and-rivers.svg'),
                     linear-gradient(
@@ -19,6 +28,10 @@
     @media screen and (min-width: $breakpoint-tablet) {
       padding-top: 3em;
       padding-bottom: 5em;
+    }
+
+    &.small {
+      padding-bottom: 3em;
     }
   }
 

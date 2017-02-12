@@ -7,29 +7,29 @@ const features = [
     text: `
       Trails represents a new, advanced generation of Node.js framework,
       unencumbered by the tumultuous legacy of Javascript. Designed around the
-      microservices pattern, the codebase is entirely in the ES6/ES7 dialect,
-      which improves performance, testability, stability, and security.
+      microservices pattern, its unreasonably concise codebase is entirely
+      in the ES6/ES7 dialect, which improves performance, testability, stability,
+      and security.
     `,
     image: 'dist/img/trails-features-modern.svg'
   },
   {
     title: 'Hyper-Modular, Un-Opinionated',
     text: `
-      Take the path less traveled. Or don't. With Trails, your team can use
-      the design patterns and existing Node modules they already know.
+      Take the path less traveled. Or don't. With Trails, there's no cargo cult.
+      Your team can use the design patterns and existing Node modules they already know.
       The capability of the framework itself is up to you, the developer, by
-      creating a distro precisely from the modules you need to make your
-      application great.
+      choosing precisely the modules you need to make your application great.
     `,
     image: 'dist/img/trails-features-modular.svg'
   },
   {
     title: 'Community Driven',
     text: `
-      Trails presents a concise, coherent design surrounded by a thriving
-      and diverse open-source ecosystem. Hundreds of Trails
-      addons and integrations, published and maintained by the community
-      and corporate sponsors alike, are available for use in your project.
+      Trails presents a modern, coherent design surrounded by a thriving
+      and diverse open-source ecosystem. Hundreds of Trails addons and
+      integrations, published and maintained by the community and corporate
+      sponsors alike, are immediately available for use in your project.
     `,
     image: 'dist/img/trails-features-community.svg'
   }

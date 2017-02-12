@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
-import Header from '../ecosystems/Header'
-import Colophon from '../ecosystems/Colophon'
+import {
+  Header,
+  Colophon,
+  TextSplash
+} from '../ecosystems'
 
 export default class Start extends Component {
 
@@ -9,6 +12,7 @@ export default class Start extends Component {
     return (
       <div>
         <Header />
+        <TextSplash title="Get Started" subtitle="You'll be on your way in no time" />
         <Colophon />
       </div>
     )
