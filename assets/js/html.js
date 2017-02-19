@@ -5,7 +5,7 @@ export default class IndexPage extends Component {
   static get propTypes () {
     return {
       children: PropTypes.any,
-      state: PropTypes.obj
+      state: PropTypes.any
     }
   }
 
@@ -17,6 +17,7 @@ export default class IndexPage extends Component {
           <meta charSet="utf-8"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
           <link rel="stylesheet" href="dist/style.css" />
+          <link rel="stylesheet" href="http://trailsjs.github.io/doc/assets/css/style.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
 					<script dangerouslySetInnerHTML={{__html: `

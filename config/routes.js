@@ -18,5 +18,11 @@ module.exports = [
     method: 'GET',
     path: '/{page?}',
     handler: 'ViewController.page'
+  },
+
+  {
+    method: 'GET',
+    path: '/doc/{docpath*}',
+    handler: 'ViewController.doc'
   }
 ]

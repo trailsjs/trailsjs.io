@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
 import {
   Header,
-  Colophon,
-  TextSplash
+  Colophon
 } from '../ecosystems'
 
 export default class Documentation extends Component {
 
   static get propTypes () {
-    return { }
+    return {
+      docHtml: React.PropTypes.string
+    }
   }
 
   render() {
     return (
       <div>
         <Header />
-        <TextSplash title="Documentation" subtitle="Everything you need to know" />
         <article className="container">
+          <div dangerouslySetInnerHTML={{ __html: this.props.docHtml }}></div>
         </article>
         <Colophon />
       </div>
