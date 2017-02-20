@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Menu from 'react-burger-menu'
 import viewportSize from 'viewport-size'
-import { Link } from 'react-router'
 
 export default class Header extends Component {
 
@@ -39,17 +38,17 @@ export default class Header extends Component {
               width={240}
               right
               noOverlay>
-              <Link to="/start">Start</Link>
-              <Link to="/doc">Docs</Link>
-              <Link to="/plugins">Plugins</Link>
-              <Link to="/support">Support</Link>
+              <a href="/start">Start</a>
+              <a href="/doc">Docs</a>
+              <a href="/plugins">Plugins</a>
+              <a href="/support">Support</a>
             </Menu.slide>
             :
             <ul>
-              <li><Link to="/start">Start</Link></li>
-              <li><Link to="/doc">Docs</Link></li>
-              <li><Link to="/plugins">Plugins</Link></li>
-              <li><Link to="/support">Support</Link></li>
+              <li><a href="/start">Start</a></li>
+              <li><a href="/doc">Docs</a></li>
+              <li><a href="/plugins">Plugins</a></li>
+              <li><a href="/support">Support</a></li>
             </ul>
           }
 

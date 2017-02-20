@@ -1,7 +1,10 @@
+const { match, RouterContext } = require('react-router')
+
 module.exports = class ViewController extends Controller {
 
   static get pageMapping () {
     return {
+      doc: 'Documentation',
       start: 'Start',
       plugins: 'Plugins',
       support: 'Support'
@@ -25,5 +28,4 @@ module.exports = class ViewController extends Controller {
         reply.view('components/environments/Documentation', { docHtml })
       })
   }
-
 }

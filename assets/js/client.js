@@ -1,8 +1,8 @@
 'use strict'
 
 const React = require('react')
-const ReactDOM = require('react-dom')
-const { Router, Route, browserHistory } = require('react-router')
+const { render } = require('react-dom')
+const { Router, Route, browserHistory, match } = require('react-router')
 
 import {
   Home, Start, Documentation, Plugins, Support
@@ -10,13 +10,14 @@ import {
 
 const mountNode = document.getElementById('app-mount')
 
-ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={Home} />
-    <Route path="/start" component={Start} />
-    <Route path="/doc" component={Documentation} />
-    <Route path="/plugins" component={Plugins} />
-    <Route path="/support" component={Support} />
-  </Router>,
-  mountNode
-)
+match({ history }, (err, redirectLocation, renderProps) => {
+  render(
+    <Router {...renderProps} history={browserHistory}>
+      <Route path="/" component={Home} />
+      <Route path="/start" component={Start} />
+      <Route path="/doc" component={Documentation} />
+      <Route path="/plugins" component={Plugins} />
+      <Route path="/support" component={Support} />
+    </Router>,
+    mountNode)
+})

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 
 export default class Colophon extends Component {
 
@@ -33,11 +32,11 @@ export default class Colophon extends Component {
           <div className="right double">
             <div className="single">
               <ul><h3>Website</h3>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/start">Get Started</Link></li>
-                <li><Link to="/doc">Documentation</Link></li>
-                <li><Link to="/plugins">Plugins</Link></li>
-                <li><Link to="/support">Help and Support</Link></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/start">Get Started</a></li>
+                <li><a href="/doc">Documentation</a></li>
+                <li><a href="/plugins">Plugins</a></li>
+                <li><a href="/support">Help and Support</a></li>
               </ul>
             </div>
             <div className="single">
