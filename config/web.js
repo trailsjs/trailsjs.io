@@ -24,9 +24,6 @@ module.exports = {
     {
       register: require('inert'),
       options: { }
-    },
-    {
-      register: require('h2o2')
     }
   ],
 
