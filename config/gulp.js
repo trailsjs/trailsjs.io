@@ -13,7 +13,7 @@ module.exports = {
   defaultTaskName: 'default',
 
   tasks: {
-    default: ['compileTemplate', 'compileStyles', 'image', 'bundle'],
+    default: ['compileTemplate', 'compileStyles', 'image'],
 
     compileTemplate () {
       return gulp.src('./assets/js/**/*.js')
@@ -35,7 +35,7 @@ module.exports = {
         .pipe(gulp.dest('dist/img'))
     },
     bundle () {
-      gulp.src('assets/js/client.js')
+      gulp.src('assets/js/html.js')
         .pipe(webpack({
           output: {
             filename: 'client.js'

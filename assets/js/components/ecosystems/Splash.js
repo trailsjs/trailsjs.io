@@ -18,7 +18,7 @@ export default class Splash extends Component {
           Fork me on Github
         </a>
         <div className="container">
-        <img className="trails-logo" src="dist/img/trails-logo.svg" alt="trails-logo" />
+        <img className="trails-logo" src="/dist/img/trails-logo.svg" alt="trails-logo" />
           <h2 className="trails-splash-description">A Modern Web Application Framework for Node.js</h2>
           <div className="trails-splash-button-tray">
             <a href="/doc"><Button label="View Docs" /></a>

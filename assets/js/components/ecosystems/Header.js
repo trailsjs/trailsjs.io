@@ -29,7 +29,7 @@ export default class Header extends Component {
       <header className="trails-header">
         <div className="container">
           <a href="/">
-            <img className="trails-logo"  src="dist/img/trails-logo-small.svg" alt="Trails logo" />
+            <img className="trails-logo"  src="/dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
           {

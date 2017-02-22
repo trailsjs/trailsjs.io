@@ -11,7 +11,7 @@ const features = [
       in the ES6/ES7 dialect, which improves performance, testability, stability,
       and security.
     `,
-    image: 'dist/img/trails-features-modern.svg'
+    image: '/dist/img/trails-features-modern.svg'
   },
   {
     title: 'Hyper-Modular, Un-Opinionated',
@@ -21,7 +21,7 @@ const features = [
       The capability of the framework itself is up to you, the developer, by
       choosing precisely the modules you need to make your application great.
     `,
-    image: 'dist/img/trails-features-modular.svg'
+    image: '/dist/img/trails-features-modular.svg'
   },
   {
     title: 'Community Driven',
@@ -31,7 +31,7 @@ const features = [
       integrations, published and maintained by the community and corporate
       sponsors alike, are immediately available for use in your project.
     `,
-    image: 'dist/img/trails-features-community.svg'
+    image: '/dist/img/trails-features-community.svg'
   }
 ]
 

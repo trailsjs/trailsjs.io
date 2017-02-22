@@ -1,4 +1,5 @@
 const request = require('request-promise')
+const lang = require('iso-639-1')
 
 /**
  * @module DocumentationService
@@ -14,9 +15,9 @@ module.exports = class DocumentationService extends Service {
       defaultLanguage: 'en',
       defaultExtension: 'html',
       supportedLanguages: [
-        'en',
-        'fr'
-      ]
+        'en'
+      ],
+      allLanguages: lang.getAllCodes()
     }
   }
 
@@ -31,11 +32,14 @@ module.exports = class DocumentationService extends Service {
       base,
       defaultLanguage,
       //defaultExtension,
-      supportedLanguages
+      supportedLanguages,
+      allLanguages
     } = this.config
 
-    const lang = supportedLanguages.includes(reqPath[0]) ? reqPath.shift() : defaultLanguage
-    const docPath = [ lang, ...reqPath ].join('/')
+    const specifiedLang = allLanguages.includes(reqPath[0]) && reqPath.shift() || defaultLanguage
+    const actualLang = supportedLanguages.includes(specifiedLang) && specifiedLang || defaultLanguage
+
+    const docPath = [ actualLang, ...reqPath ].join('/')
     const uri = `${protocol}://${host}/${base}/${docPath}`
 
     this.log.info('proxying', uri)

@@ -1,5 +1,3 @@
-const { match, RouterContext } = require('react-router')
-
 module.exports = class ViewController extends Controller {
 
   static get pageMapping () {
@@ -14,7 +12,7 @@ module.exports = class ViewController extends Controller {
   page (request, reply) {
     const page = request.params.page
 
-    reply.view(`components/environments/${ViewController[page] || 'Home'}`)
+    reply.view(`components/environments/${ViewController.pageMapping[page] || 'Home'}`)
   }
 
   /**

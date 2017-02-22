@@ -5,7 +5,7 @@ import OtherFeature from './../organisms/OtherFeatureVertical'
 const features = [
   {
     title: 'Cali Style',
-    image: 'dist/img/calistyle-logo-square.jpg',
+    image: '/dist/img/calistyle-logo-square.jpg',
     url: 'http://cali-style.com/',
     text: `
       We design and build stellar Node.js Apps that fit any type of environment, and
@@ -15,7 +15,7 @@ const features = [
   },
   {
     title: 'Jimmy Aumard',
-    image: 'dist/img/jaumard-logo-square.jpg',
+    image: '/dist/img/jaumard-logo-square.jpg',
     url: 'http://jaumard.com',
     text: `
       Jimmy is a Senior Software Engineer specialized in mobile development, and is a core
@@ -25,7 +25,7 @@ const features = [
   },
   {
     title: 'Langa',
-    image: 'dist/img/langa-logo.svg',
+    image: '/dist/img/langa-logo.svg',
     url: 'https://langa.io',
     text: `
       The team at Langa designed and authored much of the original Trails code back in 2015,
