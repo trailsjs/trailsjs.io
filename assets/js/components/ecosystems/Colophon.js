@@ -19,13 +19,13 @@ export default class Colophon extends Component {
             <h3>Follow Us</h3>
             <div className="social">
               <a href="https://github.com/trailsjs/trails" target="_blank" title="Trails on Github">
-                <img src="/dist/img/github-icon.svg" title="Trails on Github" />
+                <img src="/dist/img/github-icon.png" title="Trails on Github" />
               </a>
               <a href="https://stackshare.io/trails" target="_blank" title="Trails on Stackshare.io">
                 <img src="/dist/img/stackshare-icon.svg" title="Trails on Stackshare" />
               </a>
               <a href="https://twitter.com/trailsjs" target="_blank" title="Trails on Twitter">
-                <img src="/dist/img/twitter-icon.svg" title="Trails on Twitter" />
+                <img src="/dist/img/twitter-icon.png" title="Trails on Twitter" />
               </a>
             </div>
           </div>
