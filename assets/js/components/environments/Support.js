@@ -15,7 +15,7 @@ export default class Support extends Component {
 
   render () {
     return (
-      <div>
+      <div className="support">
         <Header />
         <TextSplash title="Support" subtitle="We'll walk with you on your Journey" />
         <article className="container">

@@ -22,6 +22,12 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/start',
+    handler: 'ViewController.start'
+  },
+
+  {
+    method: 'GET',
     path: '/doc/{docpath*}',
     handler: 'ViewController.doc'
   }

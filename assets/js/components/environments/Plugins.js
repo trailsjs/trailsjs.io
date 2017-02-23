@@ -11,7 +11,7 @@ export default class Plugins extends Component {
 
   render() {
     return (
-      <div>
+      <div className="plugins">
         <Header />
         <TextSplash title="Plugins" subtitle="We call them Trailpacks :)" />
         <Colophon />

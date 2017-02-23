@@ -2,8 +2,6 @@ module.exports = class ViewController extends Controller {
 
   static get pageMapping () {
     return {
-      doc: 'Documentation',
-      start: 'Start',
       plugins: 'Plugins',
       support: 'Support'
     }
@@ -13,6 +11,16 @@ module.exports = class ViewController extends Controller {
     const page = request.params.page
 
     reply.view(`components/environments/${ViewController.pageMapping[page] || 'Home'}`)
+  }
+
+  /**
+   * Render the start page
+   */
+  start (request, reply) {
+    this.app.services.DocumentationService.proxy([ 'start' ])
+      .then(docHtml => {
+        reply.view('components/environments/Start', { docHtml })
+      })
   }
 
   /**

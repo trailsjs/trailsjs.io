@@ -42,7 +42,7 @@ module.exports = class DocumentationService extends Service {
     const docPath = [ actualLang, ...reqPath ].join('/')
     const uri = `${protocol}://${host}/${base}/${docPath}`
 
-    this.log.info('proxying', uri)
+    this.log.info('DocumentationService: proxying uri', uri)
 
     return request(uri)
   }

@@ -14,7 +14,7 @@ export default class Documentation extends Component {
 
   render() {
     return (
-      <div>
+      <div className="doc">
         <Header />
         <article className="container">
           <div dangerouslySetInnerHTML={{ __html: this.props.docHtml }}></div>

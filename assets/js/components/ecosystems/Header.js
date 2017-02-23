@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Menu from 'react-burger-menu'
 import viewportSize from 'viewport-size'
 
 export default class Header extends Component {
@@ -32,25 +31,12 @@ export default class Header extends Component {
             <img className="trails-logo"  src="/dist/img/trails-logo-small.svg" alt="Trails logo" />
           </a>
 
-          {
-            this.state.smallScreen ?
-            <Menu.slide
-              width={240}
-              right
-              noOverlay>
-              <a href="/start">Start</a>
-              <a href="/doc">Docs</a>
-              <a href="/plugins">Plugins</a>
-              <a href="/support">Support</a>
-            </Menu.slide>
-            :
-            <ul>
-              <li><a href="/start">Start</a></li>
-              <li><a href="/doc">Docs</a></li>
-              <li><a href="/plugins">Plugins</a></li>
-              <li><a href="/support">Support</a></li>
-            </ul>
-          }
+          <ul>
+            <li><a href="/start">Start</a></li>
+            <li><a href="/doc">Docs</a></li>
+            <li><a href="/plugins">Plugins</a></li>
+            <li><a href="/support">Support</a></li>
+          </ul>
 
         </div>
       </header>

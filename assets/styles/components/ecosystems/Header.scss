@@ -1,6 +1,15 @@
 @import './../../breakpoints.scss';
 @import './../../colors.scss';
 
+.start a[href="/start"],
+.support a[href="/support"],
+.doc a[href="/doc"],
+.plugins a[href="/plugins"] {
+  font-weight: 500;
+  cursor: default;
+}
+
+
 .trails-header {
   background: white;
   min-height: 48px;
@@ -49,7 +58,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $dark-green;
+      text-decoration: none;
     }
   }
 
