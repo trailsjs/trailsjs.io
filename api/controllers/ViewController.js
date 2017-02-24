@@ -7,6 +7,9 @@ module.exports = class ViewController extends Controller {
     }
   }
 
+  /**
+   * render the specified page
+   */
   page (request, reply) {
     const page = request.params.page
 
@@ -32,6 +35,9 @@ module.exports = class ViewController extends Controller {
     this.app.services.DocumentationService.proxy(docpath)
       .then(docHtml => {
         reply.view('components/environments/Documentation', { docHtml })
+      })
+      .catch(err => {
+        reply.view('components/environments/NotFound', { })
       })
   }
 }

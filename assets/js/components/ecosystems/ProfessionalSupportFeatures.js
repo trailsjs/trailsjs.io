@@ -21,7 +21,26 @@ const features = [
       Jimmy is a Senior Software Engineer specialized in mobile development, and is a core
       contributor to Trails and several ecosystem modules.
     `,
-    location: 'France'
+    location: 'Evian-les-Bains, France / Lausanne, Switzerland'
+  },
+  {
+    title: 'JSBOT',
+    image: '/dist/img/jsbot_trans.png',
+    url: 'https://www.jsbot.io/',
+    text: `
+      We provide fast and reliable Javascript Software Development and Software Testing for Web and Mobile apps.
+    `,
+    location: 'Surat, India'
+  },
+  {
+    title: 'Big Room Studios',
+    image: '/dist/img/brs_logo_color.svg',
+    url: 'https://www.bigroomstudios.com/',
+    text: `
+      The team at Big Room Studios works with Node.js to help our clients build awesome
+      applications. If you need consulting, development or support - we’re here for you.
+    `,
+    location: 'Portland, ME'
   },
   {
     title: 'Langa',

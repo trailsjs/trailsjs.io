@@ -21,13 +21,13 @@ export default class Support extends Component {
         <article className="container">
           <header className="trails-section-header">
             <h1>Community Support</h1>
-            <h2><b>Free support</b> is always available from the Trails community</h2>
+            <p><b>Free support</b> is always available from the Trails community</p>
           </header>
           <CommunitySupportFeatures />
 
           <header className="trails-section-header">
             <h1>Professional Support</h1>
-            <h2>Commercial support is available from these experts</h2>
+            <p>Commercial support is available from these experts</p>
           </header>
           <ProfessionalSupportFeatures />
         </article>
