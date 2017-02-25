@@ -30,5 +30,11 @@ module.exports = [
     method: 'GET',
     path: '/doc/{docpath*}',
     handler: 'ViewController.doc'
+  },
+
+  {
+    method: 'GET',
+    path: '/search',
+    handler: 'TrailmixController.search'
   }
 ]
