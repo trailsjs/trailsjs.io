@@ -25,11 +25,7 @@
 
 /* Environment Styles */
 @import 'components/environments/Documentation.scss';
-
-a {
-  color: $blue;
-  text-decoration: none;
-}
+@import 'components/environments/Plugins.scss';
 
 /* Global Styles */
 * {
