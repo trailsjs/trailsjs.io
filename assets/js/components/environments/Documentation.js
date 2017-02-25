@@ -23,5 +23,4 @@ export default class Documentation extends Component {
       </div>
     )
   }
-
 }

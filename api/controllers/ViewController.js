@@ -36,11 +36,9 @@ module.exports = class ViewController extends Controller {
       .then(docHtml => {
         return reply.view('components/environments/Documentation', { docHtml })
       })
-      /*
       .catch(err => {
-        this.log.error(err)
-        //return reply.view('components/environments/NotFound', { })
+        this.log.error(`Documentation 404. Path: ${docpath}`)
+        return reply.view('components/environments/NotFound', { })
       })
-      */
   }
 }

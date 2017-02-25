@@ -26,8 +26,12 @@
 /* Environment Styles */
 @import 'components/environments/Documentation.scss';
 
-/* Global Styles */
+a {
+  color: $blue;
+  text-decoration: none;
+}
 
+/* Global Styles */
 * {
   box-sizing: border-box;
 }
