@@ -9,7 +9,7 @@ module.exports = class DocumentationService extends Service {
 
   get config () {
     return {
-      protocol: 'http',
+      protocol: 'https',
       host: 'trailsjs.github.io',
       base: 'doc',
       defaultLanguage: 'en',

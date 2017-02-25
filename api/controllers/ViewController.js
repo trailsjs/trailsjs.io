@@ -34,10 +34,13 @@ module.exports = class ViewController extends Controller {
 
     this.app.services.DocumentationService.proxy(docpath)
       .then(docHtml => {
-        reply.view('components/environments/Documentation', { docHtml })
+        return reply.view('components/environments/Documentation', { docHtml })
       })
+      /*
       .catch(err => {
-        reply.view('components/environments/NotFound', { })
+        this.log.error(err)
+        //return reply.view('components/environments/NotFound', { })
       })
+      */
   }
 }
