@@ -15,6 +15,10 @@
     padding: 1em 0;
     font-size: 1.1em;
 
+    p {
+      line-height: 1.5;
+    }
+
     img {
       width: 100%;
     }
@@ -65,6 +69,7 @@
     pre {
       background-color: $brown;
       padding: 1em;
+      margin-bottom: 2em;
     }
     code {
       font-size: 0.8em;
