@@ -64,13 +64,21 @@
     "webpack-stream": "^3.2.0"
   },
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "eslint api config assets test  && mocha"
   },
   "engines": {
     "node": ">= 4.0.0"
   },
   "eslintConfig": {
-    "extends": "trails"
+    "extends": "trails",
+    "plugins": [
+      "react"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
   },
   "repository": "git@github.com:langateam/trailsjs.io.git",
   "license": "MIT"
