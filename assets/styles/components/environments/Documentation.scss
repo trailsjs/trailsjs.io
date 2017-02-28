@@ -13,7 +13,7 @@
 
   section.main-content {
     padding: 1em 0;
-    font-size: 1.1em;
+    font-size: 18px;
 
     p {
       line-height: 1.5;
@@ -21,6 +21,12 @@
 
     img {
       width: 100%;
+    }
+
+    h1 > code,
+    h2 > code,
+    h3 > code {
+      font-weight: normal;
     }
 
     h1 {
@@ -70,6 +76,7 @@
       background-color: $brown;
       padding: 1em;
       margin-bottom: 2em;
+      font-size: 1.1em;
     }
     code {
       font-size: 0.8em;
