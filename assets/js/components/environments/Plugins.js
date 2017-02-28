@@ -17,13 +17,18 @@ export default class Plugins extends Component {
         <article className="container">
           <header className="trails-section-header">
             <p>
-              We're working hard on an excellent search interface for community Trailpacks! If you want to help out, check out the project here:
-              <a href="https://github.com/trailsjs/trailmix">https://github.com/trailsjs/trailmix</a>
+              We're working hard on an excellent search interface for community Trailpacks!
+              If you want to help out, check out the project here:
             </p>
+            <h2>
+              <a href="https://github.com/trailsjs/trailmix">github.com/trailsjs/trailmix</a>
+            </h2>
             <p>
               In the meantime, you can find many of the trailpacks on npm:
-              <a href="https://npms.io/search?q=trailpack">https://npms.io/search?q=trailpack</a>
             </p>
+            <h2>
+              <a href="https://npms.io/search?q=trailpack">npms.io/search?q=trailpack</a>
+            </h2>
           </header>
         </article>
         <Colophon />
