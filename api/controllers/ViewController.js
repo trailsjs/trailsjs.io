@@ -1,12 +1,5 @@
 module.exports = class ViewController extends Controller {
 
-  static get pageMapping () {
-    return {
-      plugins: 'Plugins',
-      support: 'Support'
-    }
-  }
-
   favicon (request, reply) {
     reply()
   }
@@ -21,13 +14,12 @@ module.exports = class ViewController extends Controller {
     })
   }
 
-  /**
-   * render the specified page
-   */
-  page (request, reply) {
-    const page = request.params.page
+  plugins (request, reply) {
+    reply.view('components/environments/Plugins')
+  }
 
-    reply.view(`components/environments/${ViewController.pageMapping[page]}`)
+  support (request, reply) {
+    reply.view('components/environments/Support')
   }
 
   /**

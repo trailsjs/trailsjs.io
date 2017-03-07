@@ -15,6 +15,7 @@ export default class IndexPage extends Component {
         <head>
           <title>Trails | Modern Web Framework for Node.js</title>
           <meta charSet="utf-8"></meta>
+          <meta name="description" content="Trails is an Enterprise Web Framework for Node.js"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
           <link rel="icon" href="/favicon.png" type="image/png" />
           <link rel="stylesheet" href="/dist/style.css" />

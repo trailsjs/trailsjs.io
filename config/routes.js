@@ -13,12 +13,6 @@ module.exports = [
 
   {
     method: 'GET',
-    path: '/',
-    handler: 'ViewController.home'
-  },
-
-  {
-    method: 'GET',
     path: '/favicon.png',
     handler: {
       file: 'assets/img/favicon.png'
@@ -27,8 +21,36 @@ module.exports = [
 
   {
     method: 'GET',
-    path: '/{page}',
-    handler: 'ViewController.page'
+    path: '/sitemap.xml',
+    handler: {
+      file: 'assets/sitemap.xml'
+    }
+  },
+
+  {
+    method: 'GET',
+    path: '/robots.txt',
+    handler: {
+      file: 'assets/robots.txt'
+    }
+  },
+
+  {
+    method: 'GET',
+    path: '/',
+    handler: 'ViewController.home'
+  },
+
+  {
+    method: 'GET',
+    path: '/plugins',
+    handler: 'ViewController.plugins'
+  },
+
+  {
+    method: 'GET',
+    path: '/support',
+    handler: 'ViewController.support'
   },
 
   {
