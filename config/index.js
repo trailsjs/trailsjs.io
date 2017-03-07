@@ -1,6 +1,7 @@
 exports.database = require('./database')
 exports.env = require('./env')
 exports.footprints = require('./footprints')
+exports.github = require('./github')
 exports.i18n = require('./i18n')
 exports.log = require('./log')
 exports.main = require('./main')

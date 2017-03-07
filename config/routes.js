@@ -11,12 +11,23 @@
 
 module.exports = [
 
-  /**
-   * Render the index view
-   */
   {
     method: 'GET',
-    path: '/{page?}',
+    path: '/',
+    handler: 'ViewController.home'
+  },
+
+  {
+    method: 'GET',
+    path: '/favicon.png',
+    handler: {
+      file: 'assets/img/favicon.png'
+    }
+  },
+
+  {
+    method: 'GET',
+    path: '/{page}',
     handler: 'ViewController.page'
   },
 
@@ -36,5 +47,11 @@ module.exports = [
     method: 'GET',
     path: '/search',
     handler: 'TrailmixController.search'
+  },
+
+  {
+    method: 'GET',
+    path: '/collective/budget/{project}',
+    handler: 'CollectiveController.getAnnualBudget'
   }
 ]

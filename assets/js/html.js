@@ -16,6 +16,7 @@ export default class IndexPage extends Component {
           <title>Trails | Modern Web Framework for Node.js</title>
           <meta charSet="utf-8"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+          <link rel="icon" href="/favicon.png" type="image/png" />
           <link rel="stylesheet" href="/dist/style.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
 					<script dangerouslySetInnerHTML={{__html: `

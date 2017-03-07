@@ -17,7 +17,7 @@ export default class Home extends Component {
         <Splash />
         <Console />
         <Features />
-        <OtherFeatures />
+        <OtherFeatures {...this.props} />
         <CallToAction />
         <Colophon />
       </div>

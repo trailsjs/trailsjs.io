@@ -7,13 +7,27 @@ module.exports = class ViewController extends Controller {
     }
   }
 
+  favicon (request, reply) {
+    reply()
+  }
+
+  home (request, reply) {
+    Promise.all([
+      this.app.services.CollectiveService.getAnnualBudget(),
+      this.app.services.CollectiveService.getGithubFollowers()
+    ])
+    .then(([ budget, stargazers ]) => {
+      reply.view('components/environments/Home', { budget, stargazers })
+    })
+  }
+
   /**
    * render the specified page
    */
   page (request, reply) {
     const page = request.params.page
 
-    reply.view(`components/environments/${ViewController.pageMapping[page] || 'Home'}`)
+    reply.view(`components/environments/${ViewController.pageMapping[page]}`)
   }
 
   /**

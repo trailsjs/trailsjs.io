@@ -2,45 +2,58 @@ import React, { Component } from 'react'
 
 import OtherFeature from './../organisms/OtherFeature'
 
-const features = [
-  {
-    title: '5,000',
+const features = {
+  downloads: {
+    title: '5,000+',
     text: 'Monthly Downloads',
     url: 'http://bit.ly/2lzFhmF'
   },
-  {
-    title: '1,400',
+  followers: {
     text: 'Github Followers',
     url: 'https://github.com/trailsjs/trails/stargazers'
   },
-  {
-    title: '100+',
-    text: 'Contributors'
+  contributors: {
+    title: '200+',
+    text: 'Active Contributors',
+    url: 'https://gitter.im/trailsjs/trails'
   },
-  {
+  plugins: {
     title: '100+',
     text: 'Plugins',
     url: '/plugins',
   },
-  {
-    title: '$750+',
-    text: 'Paid Bounties',
-    url: 'https://www.bountysource.com/teams/trailsjs'
+  collective: {
+    text: 'Open Collective Budget',
+    url: 'https://opencollective.com/trails',
   },
-  {
+  version: {
     title: '2.0.2',
     text: 'Current Version',
     url: 'https://github.com/trailsjs/trails/releases/latest'
   }
-]
+}
 
 export default class MoreFeatures extends Component {
 
   static get propTypes () {
-    return { }
+    return {
+      budget: React.PropTypes.number,
+      stargazers: React.PropTypes.number
+    }
+  }
+
+  renderCollectiveBudget () {
+    const usd = Math.round(this.props.budget / 100).toLocaleString()
+
+    return '$' + usd
+  }
+
+  renderGithubFollowers () {
+    return this.props.stargazers.toLocaleString()
   }
 
   render() {
+
     return (
       <section className="trails-more-features">
         <div className="container">
@@ -48,7 +61,15 @@ export default class MoreFeatures extends Component {
             <h2>Quick Look</h2>
           </header>
           <div className="trails-more-features-content">
-            {features.map((feature, i) => (<OtherFeature key={i} {...feature} />))}
+
+            <OtherFeature {...features.downloads} />
+            <OtherFeature {...features.followers} title={this.renderGithubFollowers()} />
+            <OtherFeature {...features.contributors} />
+
+            <OtherFeature {...features.plugins} />
+            <OtherFeature {...features.collective} title={this.renderCollectiveBudget()} />
+            <OtherFeature {...features.version} />
+
           </div>
 
         </div>
